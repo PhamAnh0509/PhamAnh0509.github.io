@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signup_container">
+        <div class="signup_left">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_vkat0hmy.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            <p>You are already have a account? <a href="./signin.html">Sign in</a></p>
+        </div>
+
+        <div class="signup_right">
+            <h1>Sign up</h1>
+            <form id="formsignup" action="">
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input name="name" type="text" placeholder="Name">
+                </div>
+                <p id="name-err" class="text-error"></p>
+
+                <div class="input-wrapper">
+                    <i class="far fa-envelope-square"></i>
+                    <input name="email" type="text" placeholder="E-Mail" >
+                </div>
+                <p id="email-err" class="text-error"></p>
+
+                <div class="input-wrapper">
+                    <i class="fal fa-key"></i>
+                    <input id="password" name="password" type="password" placeholder="Password" >
+                </div>
+                <p id="pass-err" class="text-error"></p>
+
+                <div class="input-wrapper">
+                    <i class="fal fa-key"></i>
+                    <input id="cfpassword" name="cfpassword" type="password" placeholder="Confirm Password" >
+                </div>
+                <p id="cfpass-err" class="text-error"></p>
+
+                <input type="checkbox" id="showPassword" value="true" onclick="visiable()">
+                <label for="showPassword">Show password</label><br>
+
+                <button type="submit">Register</button>
+
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjxIN5EdUZ0iCjlMb83yuVCFDMsLU1zVE",
+    authDomain: "clouldchat.firebaseapp.com",
+    projectId: "clouldchat",
+    storageBucket: "clouldchat.appspot.com",
+    messagingSenderId: "468405430940",
+    appId: "1:468405430940:web:f65a8234e57afa45c21b59",
+    measurementId: "G-C81TFZ6GV3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>  
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script>
+        let visiable = ()=>{
+            let x = document.getElementById("cfpassword")
+            let y = document.getElementById("password")
+            if(x.type == "password" ){
+                x.type = "text"
+                y.type = "text"
+            }else{
+                x.type = "password"
+                y.type = "password"
+            }
+        }
+    </script>
+    <script src="./signup.js"></script>
+
+
+
+</body>
+</html>
