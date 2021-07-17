@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, #00c9ff, #0fb9b1, #92fe9d, #fffa65);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: whitesmoke;
+    align-items: center;
+
+}
+
+.nav img{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin: 0px 10px;
+}
+
+input{
+    margin-right: 10px
+}
+
+.nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-search input{
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+.nav ul li a:hover{
+        border-radius:5px ;
+        transition : all 1s ease-in;
+        background-color:lightgray ;
+        text-decoration: underline;
+    
+}
+
+.baner{
+    background-image:url(https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-simple-fashion-reading-time-background-template-image_190905.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow {
+  font-size: 80px;
+  color: #2c3e50;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #2c3e50, 0 0 20px #2c3e50, 0 0 30px #CAD3C8, 0 0 40px #CAD3C8, 0 0 50px #CAD3C8, 0 0 60px #CAD3C8, 0 0 70px #CAD3C8;
+  }
+  to {
+    text-shadow: 0 0 20px #2c3e50, 0 0 30px #f5f6fa, 0 0 40px #f5f6fa, 0 0 50px #f5f6fa, 0 0 60px #f5f6fa, 0 0 70px #f5f6fa, 0 0 80px #f5f6fa;
+  }
+}
+
+.product{
+    width: 20%;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.product img{
+    width: 90%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.product p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 130px;
+}
+
+.product h2{
+    height: 60px;
+    font-size: 16px;
+    
+}
+.product button{
+    background: linear-gradient(120deg, #00c9ff, #0fb9b1, #92fe9d, #fffa65);
+    background-size: 150%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    transition: 1s;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+.product button:hover{
+    background-position: right;
+    transition: 1s;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+}
+
+.footer-top{
+    height: 250px;
+    display: flex;
+    width: 100%;
+    background-color: grey;
+}
+.left{
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.right{
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 60px;
+}
+.mid{
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    line-height: 250px;
+    margin-top: 60px;
+}
+
+.footer-bottom{
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.footer-bottom h3{
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+}

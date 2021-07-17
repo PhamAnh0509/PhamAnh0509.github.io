@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    <style>
+        .card {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 2s;
+            animation: changeColor 2s infinite;
+            font-family: 'Oi', cursive;
+
+        }
+
+        .card:hover {
+            transition: 1s;
+            background: black;
+            border-radius: 30px;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: green;
+                width: 160px;
+                height: 160px;
+
+            }
+
+            25% {
+                background-color: yellowgreen;
+                width: 170px;
+                height: 170px;
+
+            }
+
+            50% { 
+                background-color: yellow;
+                width: 180px;
+                height: 180px;
+
+            }
+
+            75% {
+                background-color: orange;
+                width: 190px;
+                height: 190px;
+
+            }
+
+            100% {
+                background-color: orangered;
+                width: 200px;
+                height: 200px;
+
+            }
+
+        }
+
+        .c-1 {
+            background: red;
+        }
+
+        .c-2 {
+            background: green;
+
+        }
+
+        .c-3 {
+            background: yellow
+        }
+
+        .conatiner {
+            background: gray;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: wheat
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatiner">
+
+        <a href="https://www.google.com/">
+            <div class="card c-1">
+                <h1>google</h1>
+            </div>
+        </a>
+        <div class="card c-2">
+            <a href="https://www.facebook.com/">
+                <h1>facebook</h1>
+            </a>
+        </div>
+        <a href="./index.html">
+            <div class="card c-3">
+                <h1>Microsoft</h1>
+            </div>
+        </a>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="signup_container">
+        <div class="signup_left">
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_mfwcylmy.json" background="transparent"
+                speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+            <p>You don't have an account? <a href="./signup.html">Sign up</a></p>
+        </div>
+
+        <div class="signup_right">
+            <h1>Sign in</h1>
+            <form id="formsignup" action="">
+
+
+                <div class="input-wrapper">
+                    <i class="far fa-envelope-square"></i>
+                    <input name="email" type="text" placeholder="E-Mail">
+                </div>
+                <p id="email-err" class="text-error"></p>
+                <div class="input-wrapper">
+                    <i class="fal fa-key"></i>
+                    <input id="password" name="password" type="password" placeholder="Password" >
+                </div>
+                <p id="pass-err" class="text-error"></p>
+
+
+                <input type="checkbox" id="showPassword" value="true" onclick="visiable()">
+                <label for="showPassword">Show password</label><br>
+
+                <button type="submit">Sign In</button>
+
+
+
+
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script>
+        let visiable = () => {
+
+            let x = document.getElementById("password")
+            if (x.type == "password") {
+
+                x.type = "text"
+            } else {
+
+                x.type = "password"
+            }
+        }
+    </script>
+<script src="./signin.js"></script>
+</body>
+
+</html>

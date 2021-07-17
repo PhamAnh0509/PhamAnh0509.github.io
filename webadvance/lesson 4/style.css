@@ -1,0 +1,30 @@
+.container{
+    width: 500px;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-wrapper{
+    width: 300px;
+    margin: auto;
+    background: whitesmoke;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0,225, 0.225);
+
+}
+
+.weather-wrapper h1{
+    font-size: 60px;
+
+}
+
+.weather-wrapper p{
+    font-size: 40px;
+}
