@@ -55,10 +55,10 @@ let signUp_process = async (data)=>{
             displayName: name
         })
         await firebase.auth().currentUser.sendEmailVerification()
-        alert("success")
+    sweetAlert('success','successfully, please check your email')
     } catch (error) {
         let message = error.message
-        alert(message)
+        sweetAlert('error', message)
     }
 }
 
@@ -69,3 +69,21 @@ let setTextError = (tagname, content) => {
     document.querySelector(tagname).innerHTML = content
 }
     
+let sweetAlert = (icon,content)=>{
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: icon,
+        title: content
+      })
+}

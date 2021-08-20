@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+  
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./chat.css">
+
+    <link
+    href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="container">
+        <div class="chat_left">
+            <div class="list_users_container">
+                <div class="list_users_header">
+                    <form id="fAddConversation">
+                        <input name="fName" type="text" placeholder="Chat Name">
+                        <input name="fEmail" type="text" placeholder="Friend Email">
+                        <button type="submit">Add</button>
+                    </form>
+                    
+                </div>
+                <hr>
+                <div class="list_users">
+                    <div class="list_user">
+                    
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="control_container">
+                
+                <div class="ft0">
+                    <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
+                    <span id="currentEmail" >...</span>
+                </div>
+
+                <div class="l"></div> 
+
+                <div onclick="signOut()" class="ft1">
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_vmlm0zew.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>
+                </div>
+
+                <div class="ft2">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="chat_right">
+            <div class="chat_container">
+                <div class="chat_title">
+                    <div>
+                        <h1 id="currentChatName" >Loading...</h1>
+                        <p id="currentID">...</p>
+                    </div>
+                    <div>
+                        <p style="font-size:20px">18:00 wed</p>
+                    </div>
+                </div>
+                <div class="chat_body">
+                    <div class="chat_body_wrapper">
+
+                     <h1><Loading class=""></Loading></h1>
+
+                    </div>
+                    <form id="messages_input">
+                        <input name="m" type="text">
+                        <button type="submit" >
+                            <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_PHmUt4.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configurationsd
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjxIN5EdUZ0iCjlMb83yuVCFDMsLU1zVE",
+    authDomain: "clouldchat.firebaseapp.com",
+    projectId: "clouldchat",
+    storageBucket: "clouldchat.appspot.com",
+    messagingSenderId: "468405430940",
+    appId: "1:468405430940:web:f65a8234e57afa45c21b59",
+    measurementId: "G-C81TFZ6GV3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>  
+
+<script src="./chat.js"></script>
+
+<script>
+    const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+</script>
+
+    <!-- CSS only -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+</body>
+</html>

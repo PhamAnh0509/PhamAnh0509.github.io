@@ -30,12 +30,12 @@
 
                 <div class="input-wrapper">
                     <i class="far fa-envelope-square"></i>
-                    <input name="email" type="text" placeholder="E-Mail">
+                    <input name="email" type="text" placeholder="E-Mail" required>
                 </div>
                 <p id="email-err" class="text-error"></p>
                 <div class="input-wrapper">
                     <i class="fal fa-key"></i>
-                    <input id="password" name="password" type="password" placeholder="Password" >
+                    <input id="password" name="password" type="password" placeholder="Password" required>
                 </div>
                 <p id="pass-err" class="text-error"></p>
 
@@ -51,7 +51,39 @@
             </form>
         </div>
     </div>
+
+
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
+
+<script>
+  // Your web app's Firebase configurationsd
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjxIN5EdUZ0iCjlMb83yuVCFDMsLU1zVE",
+    authDomain: "clouldchat.firebaseapp.com",
+    projectId: "clouldchat",
+    storageBucket: "clouldchat.appspot.com",
+    messagingSenderId: "468405430940",
+    appId: "1:468405430940:web:f65a8234e57afa45c21b59",
+    measurementId: "G-C81TFZ6GV3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>  
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
         let visiable = () => {
@@ -70,3 +102,117 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
